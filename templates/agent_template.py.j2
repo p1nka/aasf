@@ -1,0 +1,68 @@
+# -*- coding: utf-8 -*-
+"""
+Agent: {{ agent.agent_id }}
+Agent Name: {{ agent.agent_name }}
+Type: {{ agent.type }}
+Priority: {{ agent.priority }}
+Primary Function: {{ agent.primary_function }}
+"""
+
+class {{ agent.class_name }}:
+    """
+    This class implements the logic for the {{ agent.agent_name }}.
+    It is automatically scaffolded from the rulebook.
+    """
+    def __init__(self, config=None):
+        """
+        Initializes the agent.
+        Resource Requirements: {{ agent.get('resource_requirements', 'N/A') }}
+        """
+        self.agent_id = "{{ agent.agent_id }}"
+        self.config = config
+        print(f"Initializing agent: {self.agent_id} - {{ agent.agent_name }}")
+
+    def execute(self, task_data):
+        """
+        The main execution method for the agent.
+
+        Args:
+            task_data (dict): The data required to perform the task.
+
+        Returns:
+            dict: The result of the agent's execution.
+        """
+        print(f"Executing task for agent {self.agent_id} with data: {task_data}")
+
+        # --- TODO: Implement core agent logic here ---
+        # Example:
+        # if self.agent_id == "DOC-ANALYZER-001":
+        #     return self._process_document(task_data)
+        # elif self.agent_id == "CON-PROGRESS-001":
+        #     return self._analyze_construction_photos(task_data)
+
+        result = {
+            "status": "completed",
+            "agent_id": self.agent_id,
+            "message": "Logic not yet implemented."
+        }
+        # --- End of TODO section ---
+
+        return result
+
+    # --- TODO: Add private helper methods for specific logic below ---
+    # def _process_document(self, data):
+    #     pass
+
+if __name__ == '__main__':
+    # Example of how to instantiate and run the agent
+    agent_instance = {{ agent.class_name }}()
+
+    # Simulate a task
+    sample_task = {
+        "document_url": "s3://path/to/document.pdf",
+        "project_id": "prj-123"
+    }
+
+    result = agent_instance.execute(sample_task)
+    print("\nExecution Result:")
+    print(result)

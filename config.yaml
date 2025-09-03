@@ -1,0 +1,40 @@
+# --- General Settings ---
+output_directory: "generated_agents"
+log_level: "INFO"
+
+# --- Ingestion Settings ---
+# This section is for the future when the orchestrator is more advanced.
+# It's good practice to have it here.
+ingestion_settings:
+  parsers:
+    .txt: "TextParser"
+    .pdf: "PdfParser"
+
+# --- Discovery Settings ---
+# Configuration for the SectionFinder class
+discovery_settings:
+  section_delimiter: "---"
+
+# --- Extraction Settings ---
+# THIS IS THE CRITICAL SECTION.
+# The 'AgentExtractor' receives this entire block.
+extraction_settings:
+  # The key the extractor looks for internally.
+  extraction_patterns:
+    header: '^\s*[\d\.]+\s*(?P<agent_name>.+?)\s*\((?P<agent_id>[\w-]+)\)'
+    attributes:
+      primary_function: '^Primary Function:\s*(.*)'
+      type: '^Type:\s*(.*)'
+      priority: '^Priority:\s*(.*)'
+      resource_requirements: '^Resource Requirements:\s*(.*)'
+
+# --- Scaffolding Settings ---
+# Configuration for the ScaffoldingBuilder class
+scaffolding_settings:
+  templates:
+    - name: "json_definition"
+      template_file: null
+      output_filename_template: "{{ agent.agent_id }}.json"
+    - name: "python_agent"
+      template_file: "agent_template.py.j2"
+      output_filename_template: "{{ agent.class_name | lower }}.py"

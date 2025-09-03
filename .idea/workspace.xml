@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="06bf028c-776b-4431-bfac-b24e15265d29" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/AASF.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/a_ingestion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/a_ingestion/base_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/a_ingestion/pdf_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/a_ingestion/text_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/b_discovery/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/b_discovery/section_finder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/c_extraction/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/c_extraction/extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/c_extraction/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/d_scaffolding/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/d_scaffolding/builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/logger_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aasf/orchestrator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/__init__.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="32BXddXDcGKINhn69ivnJOZRthL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06bf028c-776b-4431-bfac-b24e15265d29" name="Changes" comment="" />
+      <created>1756895027458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756895027458</updated>
+    </task>
+    <servers />
+  </component>
+</project>
